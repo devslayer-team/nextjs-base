@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": "next/core-web-vitals",
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"rules": {
+		"@typescript-eslint/no-explicit-any": "off",
+		"no-warning-comments": [
+			"warn",
+			{
+				"terms": ["todo"],
+				"location": "anywhere"
+			}
+		]
+	}
 }
